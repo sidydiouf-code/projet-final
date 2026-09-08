@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fffaf0;
+}
+
+/* Navigation */
+header {
+    background-color: #8b4513;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Accueil */
+.hero {
+    height: 600px;
+
+    /* Image du restaurant */
+    background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("image/image\ restaurant\ mame\ yaye.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text {
+    color: white;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+/* Menu */
+.menu {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.menu h2,
+.about h2,
+.contact h2 {
+    font-size: 35px;
+    color: #8b4513;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card strong {
+    color: #8b4513;
+    font-size: 20px;
+}
+
+/* À propos */
+.about {
+    padding: 70px 15%;
+    text-align: center;
+    background-color: #f5e6d3;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+    .temoignages {
+padding: 80px 8%;
+background: #fffaf3;
+text-align: center;
+}
+
+.temoignages-header .subtitle {
+color: #d99a00;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.temoignages-header h2 {
+font-size: 38px;
+margin: 15px 0;
+color: #222;
+}
+
+.temoignages-header h2 span {
+color: #d99a00;
+}
+
+.temoignages-header p {
+color: #777;
+margin-bottom: 45px;
+}
+
+.temoignages-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+.temoignage-card {
+background: white;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+text-align: left;
+transition: 0.3s;
+}
+
+.temoignage-card:hover {
+transform: translateY(-8px);
+}
+
+.etoiles {
+color: #f5b301;
+font-size: 20px;
+margin-bottom: 18px;
+}
+
+.temoignage-card p {
+color: #555;
+line-height: 1.7;
+font-size: 15px;
+margin-bottom: 25px;
+}
+
+.client {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.client-avatar {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background: #d99a00;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+font-weight: bold;
+}
+
+.client h3 {
+margin: 0;
+color: #222;
+}
+
+.client span {
+color: #888;
+font-size: 13px;
+}
+
+@media (max-width: 800px) {
+.temoignages-container {
+grid-template-columns: 1fr;
+}
+
+
+.temoignages-header h2 {
+    font-size: 30px;
+}
+
+
+}
+
+
+/* Contact */
+.contact {
+    padding: 70px;
+    text-align: center;
+}
+
+.contact p {
+    margin: 12px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8b4513;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+   
+       .contact {
+padding: 90px 8%;
+background: #fffaf3;
+}
+
+.contact-header {
+text-align: center;
+margin-bottom: 50px;
+}
+
+.contact-header > span {
+color: #d99a00;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.contact-header h2 {
+font-size: 40px;
+color: #222;
+margin: 12px 0;
+}
+
+.contact-header h2 strong {
+color: #d99a00;
+}
+
+.contact-header p {
+color: #777;
+}
+
+.contact-container {
+max-width: 1100px;
+margin: auto;
+display: grid;
+grid-template-columns: 0.8fr 1.2fr;
+gap: 50px;
+background: white;
+padding: 45px;
+border-radius: 20px;
+box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h3 {
+font-size: 28px;
+color: #222;
+margin-top: 0;
+}
+
+.contact-info > p {
+color: #777;
+line-height: 1.7;
+margin-bottom: 35px;
+}
+
+.info-item {
+display: flex;
+align-items: center;
+gap: 15px;
+margin-bottom: 25px;
+}
+
+.info-icon {
+width: 48px;
+height: 48px;
+border-radius: 50%;
+background: #fff3d1;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 21px;
+}
+
+.info-item h4 {
+margin: 0 0 5px;
+color: #222;
+}
+
+.info-item p {
+margin: 0;
+color: #777;
+font-size: 14px;
+}
+
+.contact-form {
+width: 100%;
+}
+
+.form-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+.form-group {
+margin-bottom: 22px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 8px;
+color: #333;
+font-weight: 600;
+font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+box-sizing: border-box;
+padding: 14px 16px;
+border: 1px solid #ddd;
+border-radius: 8px;
+outline: none;
+font-family: inherit;
+font-size: 15px;
+transition: 0.3s;
+background: #fff;
+}
+
+.form-group textarea {
+resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+border-color: #d99a00;
+box-shadow: 0 0 0 3px rgba(217, 154, 0, 0.12);
+}
+
+.btn-contact {
+border: none;
+background: #d99a00;
+color: white;
+padding: 15px 28px;
+border-radius: 8px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.btn-contact:hover {
+background: #b98200;
+transform: translateY(-2px);
+}
+
+.btn-contact span {
+margin-left: 10px;
+font-size: 20px;
+}
+
+@media (max-width: 850px) {
+.contact-container {
+grid-template-columns: 1fr;
+padding: 30px;
+}
+
+
+.form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.contact-header h2 {
+    font-size: 30px;
+}
+
+
+}
+
+@media (max-width: 500px) {
+.contact {
+padding: 60px 5%;
+}
+
+
+.contact-container {
+    padding: 20px;
+}
+
+
+}
+
+
+
+     
+/* Footer */
+footer {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Téléphone */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
